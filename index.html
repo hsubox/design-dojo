@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        font-family: 'Ubuntu Mono', monospace;
+      }
+      a:visited {
+        color: blue;
+      }
+      #parallax-top {
+        background-color: #79E59D;
+      }
+      #parallax-preinterview {
+        background-color: #9CBFA0;
+      }
+      #parallax-practiceinterview {
+        background-color: #687F6B;
+      }
+      #parallax-postinterview {
+        background-color: #D0FFD6;
+      }
+      #parallax-realinterview {
+        background-color: #BBE5C0;
+      }
+      .parallax {
+        /* Set a specific height */
+        height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .content {
+        position: relative;
+        margin-left: 100px;
+        border-left: solid 5px black;
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        justify-content: left;
+        align-items: center;
+        height: 100vh;
+      }
+      .content > * {
+        margin: 20px;
+      }
+
+      .circle-container {
+        margin: 0;
+        position: absolute;
+        background-color: #A8E53B;
+        width: 0px;
+        height: 0px;
+        left: -2.5px;
+        top: 50vh;
+      }
+      .circle {
+        margin: 0;
+        position: absolute;
+        background-color: #A8E53B;
+        width: 32px;
+        height: 30px;
+        border-radius: 30px;
+        border: 5px solid black;
+        left: -21px;
+        top: -21px;
+
+      }
+      h1 {
+        width: 40vw;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax" id="parallax-top">
+      <div class="content" id="top">
+        <h1>Recurse Center Interview Prep</h1>
+        <div class="subcontent">
+          <p>
+            <a href="#preinterview">I've never done an interview before? How does this all work?</a>
+          </p>
+          <p>
+            <a href="#practiceinterview">I'm ready for a mock interview? Where can I sign up?</a>
+          </p>
+          <p>
+            <a href="#postinterview">So... how did that mock interview go?</a>
+          </p>
+          <p>
+            <a href="#realinterview">I'm ready to apply to a REAL job. How do I do that?</a>
+          </p>
+        </div>
+        <div class="circle-container"><div class="circle"></div></div>
+
+      </div>
+    </div>
+    <div class="parallax" id="parallax-preinterview">
+      <div class="content" id="preinterview">
+        <h1>Pre-Interview</h1>
+        <div class="subcontent">
+          <p>
+            Read <a href="#">Cracking the Code</a>
+          </p>
+          <p>
+            Try practice problems on <a href="#">HackerRank</a>
+          </p>
+          <p>
+            Look through the <a href="#">RC Interview Question Bank</a>
+          </p>
+        </div>
+        <div class="circle-container"><div class="circle"></div></div>
+
+      </div>
+    </div>
+    <div class="parallax" id="parallax-practiceinterview">
+      <div class="content" id="practiceinterview">
+        <h1>Practice Interviews</h1>
+        <div class="subcontent">
+          <p>
+            <a href="#">Sign up</a> for a whiteboarding interview
+          </p>
+          <p>
+            <a href="#">Sign up</a> for a behavioral interview
+          </p>
+        </div>
+        <div class="circle-container"><div class="circle"></div></div>
+
+      </div>
+    </div>
+    <div class="parallax" id="parallax-postinterview">
+      <div class="content" id="postinterview">
+        <h1>Post Practice Interview</h1>
+        <div class="subcontent">
+          <p>
+            <a href="#">Give feedback</a>
+          </p>
+          <p>
+            <a href="#">Read feedback you were given</a>
+          </p>
+        </div>
+        <div class="circle-container"><div class="circle"></div></div>
+
+      </div>
+    </div>
+    <div class="parallax" id="parallax-realinterview">
+      <div class="content" id="realinterview">
+        <h1>Getting Real Interviews</h1>
+        <div class="subcontent">
+          <p>
+            Attend a RC <a href="#">job fair</a>
+          </p>
+          <p>
+            <a href="#">Schedule a meeting</a> with Nancy/Sonali
+          </p>
+          <p>
+            Research <a href="#">RC Companies</a>
+          </p>
+        </div>
+        <div class="circle-container"><div class="circle"></div></div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
